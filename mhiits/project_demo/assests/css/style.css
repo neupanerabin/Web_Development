@@ -1,3 +1,5 @@
+/* use font fase 
+How front style display in web page */
 @font-face {
     font-family: OpenSans;
     src:url('./project_demo/assests/fonts/OpenSans-VariableFont_wdth');
@@ -6,15 +8,12 @@
 *{
     margin: 0;
 }
-
+/* for whole backgroud color */
 body{
     background-color: aqua;
 }
 topheader{
     background-color: antiquewhite;
-}
-h2{
-    font-family: 'Courier New', Courier, monospace;
 }
 a{
     text-decoration: none;
@@ -26,7 +25,7 @@ a{
     background-color:white;
     overflow: auto;
 }
-.logo img{
+.logo img{     /*logo image  */
     width: 200px;
 }
 .logo{
@@ -45,7 +44,7 @@ a{
 }
 .btn-primary{
     padding: 5px, 10px;
-    background-color: rgb(51, 51, 182);
+    background-color: rgb(35, 35, 234);
     color: white;
     font-weight: bold;
 
@@ -64,7 +63,37 @@ a{
 
 /* footer */
 
-.footer_box_one{
-    background-color: aliceblue;
+.main_footer{
+    background-color: #2f589b;
+    padding: 40px, 0;
+    height: 200px;
+}
 
+.div25{
+    width: 33.33%;  
+    float:left;
+    padding: 5px;
+}
+.div50{
+    width: 50%;
+    float: left;
+    overflow: auto;
+}
+ pb-40{
+    color: #c5cfdb;
+    text-decoration: uppercase;
+    font-weight: 700;
+ }
+
+.main_footer a{
+
+}
+.list-unstyle{
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+
+.pb-25{
+    padding-bottom: 20px;
 }
