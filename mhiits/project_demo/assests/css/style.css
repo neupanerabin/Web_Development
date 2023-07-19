@@ -67,6 +67,7 @@ a{
     background-color: #2f589b;
     padding: 40px, 0;
     height: 200px;
+    overflow: auto;
 }
 
 .div25{
@@ -83,17 +84,28 @@ a{
     color: #c5cfdb;
     text-decoration: uppercase;
     font-weight: 700;
+    font-size: 14px;
+    padding: 40px 0 40px 0;
  }
 
-.main_footer a{
-
-}
-.list-unstyle{
-    margin-left: 0px;
-    padding-left: 0px;
+.list-unstyle a{
+    text-decoration: none;
+    color: #1ec0ec;
+    font-size: 17px;
+    font-weight: 10;
     
 }
+.list-unstyle li{
+    list-style: none;
+    padding: 7px;
+}
 
-.pb-25{
-    padding-bottom: 20px;
+.p-20{
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
 }
