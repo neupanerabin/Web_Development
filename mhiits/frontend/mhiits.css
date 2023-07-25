@@ -141,27 +141,28 @@ footer {
   color: #c5cfdb;
 }
 
-.vr{
+.vr {
   border-right: 2px solid #1ec0ec;
   padding-right: 10px;
   padding-top: 15px;
 }
 
 
-.country{
+.country {
   display: flex;
   padding-top: 20px;
   padding-right: 10px;
 }
-.india{
+
+.india {
   margin-right: 20px;
 }
 
-.nepal_flag{
+.nepal_flag {
   padding-right: 5px;
 }
 
-.country-color{
+.country-color {
   color: #c5cfdb;
 }
 
@@ -356,7 +357,7 @@ footer {
 }
 
 
-.second-body{
+.second-body {
   background-color: white;
   width: 100%;
   font-size: 14px;
@@ -369,45 +370,146 @@ footer {
   left: 0;
   right: 0;
   height: 700px;
-  
+
 }
-.body-left{
+
+.body-left {
   width: 50%;
 }
-.backimage{
+
+.backimage {
   position: absolute;
   top: 0px;
   left: 220px;
 }
-.frontimage{
+
+.frontimage {
   position: absolute;
   z-index: 1;
   left: 180px;
   top: 130px;
 
- 
+
 }
 
-.body-right{
+.body-right {
   width: 50%;
   top: 130px;
   float: right;
   position: absolute;
   left: 750px;
 }
-.body-title{
+
+.body-title {
   color: #2f589b;
   font-size: 50px;
 }
 
-.text{
+.text {
   font-size: 20px;
   margin-top: 30px;
-  font-style: italic;
+  font-style: default;
   letter-spacing: 1px;
 }
 
-.text-2{
+.text-2 {
   margin-top: 30px;
+
+}
+
+.third-body{
+  background-color: #2f589b;
+  height: 1193px;
+  width: 100%;
+  margin-top: 54.7%;
+}
+
+.third-heading{
+  color: white;
+  padding: 100px;
+  margin-left: 400px;
+  font-size: 50px;
+}
+
+.third-paragraph{
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  text-align: center;
+  display: inline-block;
+  margin-left: 33%;
+  margin-right: 330px;
+  margin-top: -90px;
+  font-size: 14px;
+}
+
+
+/* Third body css start */
+
+.services-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.identity-item{
+  display: block;
+  width: 322px;
+  height: 322px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  margin: 15px;
+  top: 0px;
+  transition: top 0.5s;
+  
+}
+.export-item{
+  display: block;
+  width: 322px;
+  height: 322px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  margin: 15px;
+  top: 0px;
+  transition: top 0.5s;
+}
+.devops-item{
+  display: block;
+  width: 322px;
+  height: 322px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  margin: 15px;
+  top: 0px;
+  transition: top 0.5s;
+
+}
+.custom-item{
+  display: block;
+  width: 322px;
+  height: 322px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  margin: 15px;
+  top: 0px;
+  transition: top 0.5s;
+
+}
+
+.business-item{
+  display: block;
+  width: 322px;
+  height: 322px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  margin: 15px;
+  top: 0px;
+  transition: top 0.5s;
 
 }

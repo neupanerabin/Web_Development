@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/css/animation.css">
+</head>
+<body>
+    <h1 id="oa">
+        This is JavaScript class  
+    </h1>
+
+    <div class="image">
+        <img id="div_img" src="./assests/images/stop.jpg" alt="">
+    </div>
+
+    <button type="button" onclick="startMoving()">Click Me</button>
+    <button type="button" onclick="stopMoving()">stop </button>
+
+
+   
+
+    <script>
+        // document.getElementById("demo").innerHTML = ('hwllo world');
+        function stopMoving(){
+            document.getElementById('div_img').style.animationName='none';
+            document.getElementById('div_img').src='./assests/images/stop.jpg';
+        }
+
+        function startMoving(){
+            document.getElementById('div_img').style.animationName='mymove';
+            document.getElementById('div_img').src='./assests/images/run_forrest.gif';
+        }
+
+    </script>
+
+    transition effect on css3
+    
+</body>
+</html>

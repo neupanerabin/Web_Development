@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        // //  transfer value, index, array
+        // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        // arr.map((value, index, array) => {
+        //     console.log(value, index, array);
+        //     return value;
+        // });
+
+        let data = new Map([
+            ['name', 'rabin'],
+            ['age', 20],
+            ['gender', 'male']
+        ])
+
+        data.set('email', 'email@example.com');
+        data.delete('age');
+        console.log(data);
+
+        // has 
+        console.log(data.has('gender'));
+
+
+        // for
+        for(x of data){
+            
+        }
+
+    
+
+    </script>
+    
+</body>
+</html>

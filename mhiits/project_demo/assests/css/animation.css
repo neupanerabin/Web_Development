@@ -1,0 +1,22 @@
+#div_img{
+    height: 200px;
+    width: 130;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    animation-name: mymove;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes mymove{
+    from {left:0px}
+    to {left: 500px;}
+}
+
+.image{
+    height: 200px;
+    width: 100%;
+}
