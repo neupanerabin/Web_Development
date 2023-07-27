@@ -1,0 +1,65 @@
+/* universal margi --> for all sides */
+*{
+    margin: 0;
+    padding: 0px;
+}
+/* 
+body{
+    background-image: url("../images/logo/ktm-background.jpeg");
+    background-size: cover;   
+} */
+
+/*  navbar css */
+.header{
+    height: 100px;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#upper-nave{
+    background-color:rgb(158 158 158 / 20%);
+    color: #212121;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    margin: 0px;
+}
+
+.searh-hover:hover{
+    background-color: orange;
+}
+
+/* 1st navbar size check */
+.navbar-nav{
+    position: absolute;
+    margin-left: 350px;
+    justify-content: space-between;
+    justify-content: center;
+    display: flex;
+    margin-top: 9px;
+}
+
+/* first nav padding  */
+.nav-item{
+    padding: 0 25px;
+}
+
+
+/* second navbar left and wright  */
+.second-navbar{
+    margin-left: 38px;
+    padding-top: 0px;
+}
+
+/* navbar css end */
+
+.slidercontent{
+    max-height: 500px;
+}
+
