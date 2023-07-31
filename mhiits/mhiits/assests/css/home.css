@@ -3,15 +3,17 @@
     margin: 0;
     padding: 0px;
 }
-/* 
+
 body{
-    background-image: url("../images/logo/ktm-background.jpeg");
-    background-size: cover;   
-} */
+    /* background: linear-gradient(rgba(72, 66, 66, 0.5),rgba(108, 96, 96, 0.5)),url("../images/ktm-background.jpeg"); */
+    background-size: cover; 
+    
+}
 
 /*  navbar css */
 .header{
     height: 100px;
+    background-color:#111010;
 }
 .container-fluid{
     padding-left: 0px;
@@ -19,8 +21,7 @@ body{
 }
 
 #upper-nave{
-    background-color:rgb(158 158 158 / 20%);
-    color: #212121;
+    background-color:rgba(22, 135, 240, 0.2);
     font-size: 12px;
     height: 25px;
     line-height: 25px;
@@ -48,6 +49,10 @@ body{
 /* first nav padding  */
 .nav-item{
     padding: 0 25px;
+
+}
+.nav-link{
+    color: white;
 }
 
 
@@ -59,7 +64,148 @@ body{
 
 /* navbar css end */
 
+/* Body css start */
+
+ .card_offerss{
+    padding: 35px 55px;
+    /* padding: 0px; */
+    /* margin: 50px; */
+
+}
+
+.card-img{
+    opacity: 96%;
+    background-color:wheat;
+    border-radius: 30px;
+    
+}
+
+.helmet_details{
+    color: rgba(148, 196, 130, 0.944)
+}
+.btn-helmet{
+    margin-top: 190px;
+    margin-left: 20px;
+    /* background-color: rgb(241, 119, 119); */
+    /* color: #fff; */
+}
+
+
 .slidercontent{
     max-height: 500px;
 }
 
+.carousel-inner{
+    height: 495px;
+}
+.card-group{
+    height: 300px;
+}
+.rows{
+   margin: 0 60px;
+   /* margin: 10px; */
+   margin-top: 20px;
+}
+
+.card-img-top{
+    height: 250px;
+    width: 309px;
+    /* margin-left: 60px; */
+}
+
+.secondcard{
+    margin-top: 150px;
+}
+.card:hover{
+    background-color: rgb(246, 248, 249);
+
+      
+}
+.card{
+    /* height: 400px; */
+    /* width: 250px;  */
+    margin: 10px;
+    border: 0;
+}
+.card-footer{
+    border: 0;
+}
+
+.dropdowns{
+    display: none;
+ 
+}
+
+.card:hover .dropdowns{
+    display: block;
+}
+
+
+/* footer css */
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #111010;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  
+  
+  
+  
+  

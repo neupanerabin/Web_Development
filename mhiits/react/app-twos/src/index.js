@@ -1,30 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './Banner.css'
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-
-// These import files are user defined
-
-// for two functions to use
-// import {Header, HeaderTwo} from './Header';    // import from Header page
-import Header from './Header'; 
-import Student from './Student';
-// import Banner from './Banner';
-// import Footer from './Footer';
-// import Profile from './Profile';
-
-// import StudentList from './StudentList';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header/>
-    {/* // Student is call on here */}
-    <Student/>  
+    <App />
   </React.StrictMode>
 );
 
