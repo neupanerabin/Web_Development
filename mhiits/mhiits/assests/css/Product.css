@@ -1,0 +1,159 @@
+/* universal margi --> for all sides */
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    /* background: linear-gradient(rgba(72, 66, 66, 0.5),rgba(108, 96, 96, 0.5)),url("../images/ktm-background.jpeg"); */
+    background-size: cover; 
+    
+}
+
+/*  navbar css */
+.header{
+    height: 100px;
+    background-color:#111010;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#upper-nave{
+    background-color:rgba(22, 135, 240, 0.2);
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    margin: 0px;
+}
+
+.searh-hover:hover{
+    background-color: orange;
+}
+
+/* 1st navbar size check */
+.navbar-nav{
+    position: absolute;
+    margin-left: 350px;
+    justify-content: space-between;
+    justify-content: center;
+    display: flex;
+    margin-top: 9px;
+}
+
+/* first nav padding  */
+.nav-item{
+    padding: 0 25px;
+
+}
+.nav-link{
+    color: white;
+}
+
+
+/* second navbar left and wright  */
+.second-navbar{
+    margin-left: 38px;
+    padding-top: 0px;
+}
+
+/* navbar css end */
+
+/* Body css start */
+
+.mainbody{
+    background-color: #eff0f5;
+}
+
+ 
+.middle-product{
+    margin: 40px 100px;
+    /* margin-right: 200px; */
+}
+.pricers{
+    color: #f85606;
+}
+
+.tag_names{
+    background-color: #ec6f30;
+    margin: 10px;
+    width: 340px;
+}
+
+
+
+
+
+/* footer css */
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #111010;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  
+  
+  
+  
+  

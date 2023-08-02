@@ -1,11 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./assests/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- User create css -->
+    <link rel="stylesheet" href="./assests/css/Product.css">
 </head>
+
 <body>
-    this is a product page
+
+    <!--  navbar header start -->
+    <header class="header">
+        <div class="container-fluid">
+            <!-- 1st nav bar start -->
+            <nav class="navbar navbar-expand-lg " id="upper-nave">
+                <div class="">
+                    <div class="collapse navbar-collapse d-flex">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Recharge & PAYMENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">SELL ON DARAZ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CUSTOMER CARE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">TRACK MY ORDER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">LOGIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">SIGNUP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 2nd navbar start -->
+            <nav class="navbar navbar-expand-lg second-navbar">
+                <a class="navbar-brand" href="./home.html">
+                    <img src="./assests/images/logo/homelogo.png" alt="" height="41" width="135">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex me-5" role="search" style="width: 688px; height: 45px;">
+                        <input class="form-control me-2 bg-body-tertiary" type="search" placeholder="Search in myshop"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="bi bi-search search-hover"></i></button>
+                        <i class="bi bi-cart-check mx-3 fs-2 text-primary"></i>
+                    </form>
+                    <img src="./assests/images/navadvetisement.gif" alt="hi" height="45px" width="188px">
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- navbar end -->
+
+    <!-- first body start -->
+    <div class="mainbody">
+        <div class="container-fluid middle-product">
+
+            <div class="row">
+                <div class="col-sm-3 mb-3 ">
+                    <div class="card border-0">
+                        <img src="./assests/images/duke25.webp" class="" alt="..." height="350px">
+
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="card border-0">
+                        <div class="card-body">
+
+                            <div>
+                                <h5 class="card-title">DUKE 200 BS6</h5>
+                                1 Ratings9 <br>
+                                Answered Questions
+
+                                <hr>
+                            </div>
+
+                            <div>
+                                <h4 class="pricers">Rs. 452,500</h4> <br>
+
+                                <div class="d-flex align-items-center">
+
+                                    Promotions:
+                                    <p class="tag_names">Min. Spend Rs. 700 Capped at Rs. 150</p>
+
+                                </div>
+                                <hr>
+                            </div>
+                            Quantity: 1 <br> <br>
+                            <div class="ms-4">
+
+                                <a href="#" class="btn btn-outline-danger w-25">Buy
+                                    Now</a>
+                                <a href="#" class="btn btn-outline-success w-25">Add to Cart</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div> Delivery:
+
+                                <hr>
+                            </div>
+
+                            <div>
+                                Free Delivery 4 Aug <br>
+                                2 day(s) <br>
+                                Free <br>
+                                Cash on Delivery Available <br>
+                                <hr>
+
+                            </div>
+
+                            <div>
+                                Services:
+
+
+                                100% Authentic <br>
+
+                                14 days easy return <br>
+                                Change of mind is not applicable <br>
+                                5 Years Brand Warranty <br>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!--  footer -->
+        <div>
+            <footer class="footer">
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social-icon">
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+                </ul>
+                <p>&copy;2023 Rabin Neupane | All Rights Reserved</p>
+            </footer>
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Bootstrap js -->
+        <script src="./assests/js/bootstrap.js"></script>
+        <script src="./assests/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
