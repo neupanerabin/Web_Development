@@ -19,9 +19,7 @@ const Header = (props) => {
               <Nav.Link href="#pricing">Pricing</Nav.Link>
             </Nav>
           </Container>
-        </Navbar>
-       
-  
+        </Navbar>  
         
       </>
 
