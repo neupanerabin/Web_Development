@@ -1,57 +1,32 @@
 import React, { useState } from 'react';
-import {
-  MDBNavbar,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBContainer,
-  MDBIcon,
-  MDBCollapse
-} from 'mdb-react-ui-kit';
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+
+
 
 export default function App() {
   const [showBasic, setShowBasic] = useState(false);
   return (
     <header>
-      <MDBNavbar expand='lg' light bgColor='white'>
-        <MDBContainer fluid>
-          <MDBNavbarToggler
-            onClick={() => setShowBasic(!showBasic)}
-            aria-controls='navbarExample01'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <MDBIcon fas icon='bars' />
-          </MDBNavbarToggler>
-          <MDBCollapse show={showBasic}>
-            <MDBNavbarNav right className='mb-2 mb-lg-0'>
-              <MDBNavbarItem active>
-                <MDBNavbarLink aria-current='page' href='#'>
-                  Home
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Features</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='#'>About</MDBNavbarLink>
-              </MDBNavbarItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>
+     <Navbar bg="primary p-1 mb-2 text-center" data-bs-theme="bg-light">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">About us</Nav.Link>
+            <Nav.Link href="#features">Contact us</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
 
-      <div className='p-5 text-center bg-light'>
-        <h1 className='mb-3'>Heading</h1>
-        <h4 className='mb-3'>Subheading</h4>
-        <a className='btn btn-primary' href='' role='button'>
-          Call to action
-        </a>
-      </div>
+      
+
+     
     </header>
   );
 }
