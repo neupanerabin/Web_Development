@@ -8,12 +8,14 @@ const DisplayProduct = () => {
     const [products, setProducts] = useState([
         {
             title: "I phone max" ,
+            brand: "Apple",
             description: "iphone",
             price: "$999"
 
         },
         {
             title: "ISamsung max" ,
+            brand: " Samsumg ",
             description: "samsung",
             price: "$1200"
 
@@ -31,6 +33,7 @@ const DisplayProduct = () => {
         <tr>
             <th>S.N</th>
           <th>Title</th>
+          <th>Brand</th>
           <th>Description</th>
           <th>Price</th>
           <th>Actions</th>
@@ -42,6 +45,7 @@ const DisplayProduct = () => {
                 <tr key={index}>
                 <td>{++index}</td>
                 <td>{product.title}</td>
+                <td>{product.brand}</td>
                 <td>{product.description}</td>
                 <td>{product.price}</td>
                 <td> <Button variant="danger" size="xs">Delete</Button>{' '}</td>

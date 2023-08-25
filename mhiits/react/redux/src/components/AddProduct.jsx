@@ -11,6 +11,7 @@ const AddProduct = () => {
         {
             title: " ",
             price: " ",
+            brand: " ",
             description: " ",
         }
     );
@@ -22,6 +23,7 @@ const AddProduct = () => {
         setProduct({
             title: "",
             price: "",
+            brand: " ",
             description: ""
         });
     }
@@ -41,6 +43,16 @@ const AddProduct = () => {
                             onChange={(event) => setProduct({ ...product, title: event.target.value })
                             } 
                             />
+                    </Form.Group>
+
+                    <Form.Group className='mb-3'>
+                        <Form.Label> Product Brand</Form.Label>
+                        <Form.Control type='text' placeholder="Enter Brand Name" value={product.value} 
+                        onChange={(event) => setProduct({...product, title: event.target.value})
+                    }
+                    >
+                        </Form.Control>
+
                     </Form.Group>
 
                     <Form.Group className="mb-3">

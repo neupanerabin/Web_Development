@@ -13,13 +13,13 @@ function App() {
           <h2>Product Manager</h2>
       <AddProduct />
         </Col>
+
         <Col lg={6}>
           <h2>Product Display</h2>
       <DisplayProduct></DisplayProduct>
         </Col>
+
       </Row>
-
-
     </Container>
   );
 }
