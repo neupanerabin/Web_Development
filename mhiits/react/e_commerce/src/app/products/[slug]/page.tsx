@@ -1,11 +1,14 @@
+import ProductCart from '@/components/Products/ProductCart'
+import ProductDetails from '@/components/Products/ProductDetails'
 import React from 'react'
 
 const ProductDetailsBySlug = () => {
   return (
     <div>
-        
+      <ProductDetails />
+      {/* Recommended products */}
+      <ProductCart />
 
-        <h2>Apple 14 pro Max</h2>
     </div>
   )
 }
