@@ -152,7 +152,7 @@ function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="bg-white">
+    <div className="bg-rose-300">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -266,13 +266,13 @@ function Header() {
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
-                    <a href="/login" className="-m-2 block p-2 font-medium text-gray-900">
-                      Sign in fds
+                    <a href="./login" className="-m-2 block p-2 font-medium text-gray-900">
+                      Sign in
                     </a>
                   </div>
                   <div className="flow-root">
                     <a href="./signup" className="-m-2 block p-2 font-medium text-gray-900">
-                      Create account
+                      Create 
                     </a>
                   </div>
                 </div>
@@ -314,13 +314,13 @@ function Header() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">Your Company</span>
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
-                  />
+              className="mx-auto max-h-16"
+              src="https://cdn1.iconfinder.com/data/icons/ecommerce-gradient/512/ECommerce_Website_App_Online_Shop_Gradient_greenish_lineart_Modern_bag_fashion_woman-512.png"
+              alt="Your Company"
+            />
                 </a>
               </div>
 
@@ -426,23 +426,23 @@ function Header() {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a href="user/login" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                  <Link href="/user/login" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                     Sign in
-                  </a>
+                  </Link>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  <a href="user/register" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                  <Link href="/user/register" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                     Create account
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">
                   <a href="#" className="flex items-center text-gray-700 hover:text-gray-800">
                     <img
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
+                      src="http://www.nationalpedia.com/wp-content/uploads/2017/05/national-flag-of-Nepal.jpg"
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
-                    <span className="ml-3 block text-sm font-medium">CAD</span>
+                    <span className="ml-3 block text-sm font-medium">NEP</span>
                     <span className="sr-only">, change currency</span>
                   </a>
                 </div>
