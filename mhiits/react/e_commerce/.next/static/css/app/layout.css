@@ -663,6 +663,9 @@ video {
 .-mb-px {
   margin-bottom: -1px;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -749,9 +752,6 @@ video {
 }
 .min-h-full {
   min-height: 100%;
-}
-.min-h-screen {
-  min-height: 100vh;
 }
 .w-4 {
   width: 1rem;
@@ -947,6 +947,10 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 .bg-gray-100 {
   --tw-bg-opacity: 1;
@@ -1176,22 +1180,19 @@ video {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-lime-600 {
   --tw-text-opacity: 1;
   color: rgb(101 163 13 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .opacity-0 {
   opacity: 0;
 }
 .opacity-100 {
   opacity: 1;
-}
-.opacity-50 {
-  opacity: 0.5;
 }
 .opacity-80 {
   opacity: 0.8;
@@ -1312,11 +1313,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-.first-line\:bg-black::first-line {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .placeholder\:text-gray-400::-moz-placeholder {
@@ -1487,19 +1483,14 @@ body {
     padding-right: 1.5rem;
   }
 
-  .sm\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .sm\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .sm\:text-3xl {
@@ -1594,16 +1585,16 @@ body {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-\[auto\2c auto\2c 1fr\] {
@@ -1674,12 +1665,12 @@ body {
 
 @media (min-width: 1280px) {
 
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .xl\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-6 {
