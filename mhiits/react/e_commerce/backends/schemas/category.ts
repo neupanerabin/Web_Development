@@ -22,7 +22,11 @@ export default{
         {
             name:'image',
             type: 'url',
-            // validation: (Rule:any) => Rule.required(),
-        }
+            validation: (Rule:any) => Rule.required(),
+        },
+        {
+            name: 'description',
+            type: 'string'
+        },
     ],
 }
