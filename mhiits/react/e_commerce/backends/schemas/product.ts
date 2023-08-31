@@ -80,10 +80,9 @@ export default{
                         return `Product Description must have a minimum of 10 word. ${wordCount} /10`
                         
                     }
-                })
-
-            ]
-
-        }
+                    return true
+                }),
+            ],
+        },
     ],
 }
