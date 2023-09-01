@@ -44,17 +44,17 @@ export default{
         },
         {
             name: 'isFeatured',
-            type: 'string',
+            type: 'boolean',
             validation: (Rule:any) => Rule.required(),
         },
         {
             name: 'isPopular',
-            type: 'string',
+            type: 'boolean',
             validation: (Rule:any) => Rule.required(),
         },
         {
             name: 'isisRecommended',
-            type: 'string',
+            type: 'boolean',
             validation: (Rule:any) => Rule.required(),
         },
         {
@@ -76,7 +76,7 @@ export default{
                 Rule.required().min(10),
                 Rule.custom((text:string)=>{
                     const wordCount = text.trim().split(/\s+/).length
-                    if(wordCount) {
+                    if(wordCount < 10) {
                         return `Product Description must have a minimum of 10 word. ${wordCount} /10`
                         
                     }

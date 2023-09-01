@@ -8,14 +8,14 @@ interface ProductCardProps {
   slug: string;
   imageSrc: string;
   imageAlt: string;
-  price: string;
+  price: number;
 }
 
 const ProductCard: FC<ProductCardProps> = (props) => {
   const { productName, slug, imageSrc, imageAlt, price } = props;
   return (
     <div>
-      <Link href={slug} className="group">
+      <Link href={`categories/${slug}`} className="group">
         <div className={ProductCardClass.productWarp}>
           <Image
             src={imageSrc}
