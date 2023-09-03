@@ -1,8 +1,8 @@
-import ProductCart from '@/components/Products/ProductCard';
 import React from 'react'
 
 const Products = () => {
-  return <ProductCart />
-};
-
+  return (
+    <div>Peroduct List Pag</div>
+  )
+}
 export default Products

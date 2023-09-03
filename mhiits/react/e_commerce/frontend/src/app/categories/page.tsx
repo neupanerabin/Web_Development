@@ -1,9 +1,20 @@
+
+import { getCategory } from '@/libs/api';
 import React from 'react'
 
-const CategoryList = () => {
+const ProductCategory = async (props: { params: { slug: string } }) => {
+  const {
+    params: {slug}
+     }=props;
+     
+
+     const {name} = await getCategory(slug);
+
   return (
-    <div>Category List</div>
+    <div>
+          <h2>{name}</h2>
+    </div>
   )
 }
 
-export default CategoryList
+export default ProductCategory
