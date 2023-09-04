@@ -10,7 +10,7 @@ export interface Product{
         _key:string;
         url:string;
     }>;
-    categories: {name:string; slug: {current: string} };
+    categories: {name:string, slug: {current: string} };
     quantity: number;
     description: string;
 
