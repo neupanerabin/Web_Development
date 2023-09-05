@@ -23,7 +23,7 @@ const ProductCategory = async (props: { params: { slug: string } }) => {
             slug={product.slug.current}
             imageSrc={product.images[0].url}
             imageAlt={product.name}
-            price={product.price}
+            price={product.price} 
           />
         ))}
       </div>
