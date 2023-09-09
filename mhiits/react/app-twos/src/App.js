@@ -2,58 +2,71 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [products, setProducts] = useState([
-    { id: 1, name: 'Product A', price: 10.0 },
-    { id: 2, name: 'Product B', price: 20.0 },
-    { id: 3, name: 'Product C', price: 15.0 },
-  ]);
+  const [products, setProducts] = useState([]);
+  const [productName, setProductName] = useState('');
+  const [productPrice, setProductPrice] = useState('');
+  const [productDescription, setProductDescription] = useState('');
+  const [searchKeyword, setSearchKeyword] = useState('');
 
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (product) => {
-    setCart([...cart, product]);
+  const addProduct = () => {
+    const newProduct = {
+      name: productName,
+      price: productPrice,
+      description: productDescription,
+    };
+    setProducts([...products, newProduct]);
+    setProductName('');
+    setProductPrice('');
+    setProductDescription('');
   };
 
-  const removeFromCart = (productId) => {
-    const updatedCart = cart.filter((item) => item.id !== productId);
-    setCart(updatedCart);
-  };
-
-  const emptyCart = () => {
-    setCart([]);
+  const searchProducts = () => {
+    const searchResults = products.filter(product =>
+      product.name.toLowerCase().includes(searchKeyword.toLowerCase())
+    );
+    return searchResults;
   };
 
   return (
     <div className="App">
       <h1>Ecommerce Store</h1>
-      <div className="product-list">
-        <h2>Product List</h2>
+      <div>
+        <h2>Add Product</h2>
+        <input
+          type="text"
+          placeholder="Product Name"
+          value={productName}
+          onChange={e => setProductName(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Product Price"
+          value={productPrice}
+          onChange={e => setProductPrice(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Product Description"
+          value={productDescription}
+          onChange={e => setProductDescription(e.target.value)}
+        />
+        <button onClick={addProduct}>Add Product</button>
+      </div>
+      <div>
+        <h2>Search Products</h2>
+        <input
+          type="text"
+          placeholder="Search Keyword"
+          value={searchKeyword}
+          onChange={e => setSearchKeyword(e.target.value)}
+        />
         <ul>
-          {products.map((product) => (
-            <li key={product.id}>
+          {searchProducts().map((product, index) => (
+            <li key={index}>
               {product.name} - ${product.price}
-              <button onClick={() => addToCart(product)}>Add to Cart</button>
             </li>
           ))}
         </ul>
-      </div>
-      <div className="cart">
-        <h2>Shopping Cart</h2>
-        {cart.length === 0 ? (
-          <p>Your cart is empty.</p>
-        ) : (
-          <>
-            <ul>
-              {cart.map((product) => (
-                <li key={product.id}>
-                  {product.name} - ${product.price}
-                  <button onClick={() => removeFromCart(product.id)}>Remove</button>
-                </li>
-              ))}
-            </ul>
-            <button onClick={emptyCart}>Empty Cart</button>
-          </>
-        )}
       </div>
     </div>
   );
