@@ -56,15 +56,60 @@
       );
     }
 
+    function ChatMessages() {
+      const chatMessages = [{
+        message: 'hello Chatbot!',
+        sender: 'user',
+        id: 'id1'
+      }, {
+        message: 'Hello! How can I help you',
+        sender: 'robot',
+        id: 'id2'
+      }, {
+        message: 'can you get me todays date?',
+        sender: 'user',
+        id: 'id3'
+      }, {
+        message: 'Today is August 30',
+        sender: 'robot',
+        id: 'id4'
+      }];
+
+      function sendMessage(){
+       chatMessages.push({
+        message: 'test',
+        sender: 'user',
+        id: crypto.randomUUID()
+       });
+       console.log(chatMessages)
+      }
+
+      return (
+        <>
+        // onClick is evenet and sendMessage is event handler
+        <button onClick = {sendMessage}>Send Message</button>
+
+          {chatMessages.map((chatMessage) => {
+            return (
+              <ChatMessage
+                message={chatMessage.message}
+                sender={chatMessage.sender}
+                key={chatMessage.id}
+              />
+            );
+          })
+          }
+        </>
+      );
+    }
+
     function App() {
+
+      // save message in variable
       return (
         <>
           <ChatInput />
-          <ChatMessage message="hello Chatbot! " sender="user" />
-          <ChatMessage message="Hello! How can I help you" sender="robot" />
-          <ChatMessage message="can you get me todays date?" sender="user" />
-          <ChatMessage message="Today is August 30" sender="robot" />
-
+          <ChatMessages />
         </>
       );
     }
